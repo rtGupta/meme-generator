@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: "Karla", sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    height: 65px;
+    padding: 20px 30px;
+}
+
+.header--logo {
+    height: 100%;
+}
+
+.header--title {
+    font-size: 1.75rem;
+    margin-right: auto;
+    letter-spacing: -0.13rem;
+}
+
+.header--sub-title {
+    font-size: 1.15rem;
+    font-weight: 500;
+}

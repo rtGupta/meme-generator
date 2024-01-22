@@ -74,9 +74,54 @@ main {
     font-weight: 700;
 }
 
+.meme {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 30px;
+}
+
 .meme--image {
-    margin-top: 40px;
-    max-width: 40%;
-    height: auto;
-    align-self: center;
+    max-width: 50%;
+    border-radius: 3px;
+}
+
+.meme > h2 {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .meme--image {
+        max-width: 100%;
+    }
 }
